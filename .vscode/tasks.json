@@ -1,0 +1,37 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-std=c++20",
+                "-fsanitize=address",
+                "-Wall",
+                "-Wextra",
+                "-Wempty-body",
+                "-Wignored-qualifiers",
+                "-Wmissing-field-initializers",
+                "-Wstring-compare",
+                "-Wtype-limits",
+                "-Wuninitialized",
+                "-Wunused-parameter", 
+                "${file}",
+                "-I${workspaceFolder}/HackySTL/lib",
+                "-fno-exceptions",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "-lpthread"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}

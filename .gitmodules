@@ -1,0 +1,3 @@
+[submodule "HackySTL"]
+	path = HackySTL
+	url = git://github.com/HackyTeam/HackySTL.git
