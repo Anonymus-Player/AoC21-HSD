@@ -34,7 +34,7 @@ int main()
         hsd_println("Part1. The final position is: {}", forward_pos * depth);
     }
 
-    // Part 1
+    // Part 2
     {
         hsd::string key_value = {};
         hsd::usize depth = 0, h_pos = 0, aim = 0, current_value = 0;
