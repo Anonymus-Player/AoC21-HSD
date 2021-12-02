@@ -2,10 +2,10 @@
 
 int main()
 {
-    using namespace hsd::string_view_literals;
-    constexpr auto down = "down"_sv;
-    constexpr auto up = "up"_sv;
-    constexpr auto forward = "forward"_sv;
+    using namespace hsd::string_literals;
+    const auto down = "down"_s;
+    const auto up = "up"_s;
+    const auto forward = "forward"_s;
 
     // Part 1
     {
