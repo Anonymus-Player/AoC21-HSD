@@ -10,7 +10,11 @@ int main()
 
         while (input_file.is_eof() == false)
         {
-            input_file.read_line().unwrap().set_data(input).unwrap();
+            input_file
+            .read_line()
+            .unwrap()
+            .set_data(input)
+            .unwrap();
 
             for (hsd::usize index = 0; auto bit : input)
             {
@@ -49,7 +53,11 @@ int main()
 
             while (input_file.is_eof() == false)
             {
-                input_file.read_line().unwrap().set_data(input).unwrap();
+                input_file
+                .read_line()
+                .unwrap()
+                .set_data(input)
+                .unwrap();
 
                 if (hsd::cstring::compare(input.c_str(), bits[0], index) == 0)
                 {

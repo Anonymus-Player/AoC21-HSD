@@ -15,7 +15,11 @@ int main()
 
         while (input_file.is_eof() == false)
         {
-            input_file.read_line().unwrap().set_data(key_value, current_value).unwrap();
+            input_file
+            .read_line()
+            .unwrap()
+            .set_data(key_value, current_value)
+            .unwrap();
 
             if (key_value == down)
             {
@@ -42,7 +46,11 @@ int main()
 
         while (input_file.is_eof() == false)
         {
-            input_file.read_line().unwrap().set_data(key_value, current_value).unwrap();
+            input_file
+            .read_line()
+            .unwrap()
+            .set_data(key_value, current_value)
+            .unwrap();
 
             if (key_value == down)
             {

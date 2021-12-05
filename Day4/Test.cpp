@@ -186,10 +186,7 @@ void first_part()
 
 int main()
 {
-    // Part 1
     first_part();
-
-    // Part 2
     second_part();
     return 0;
 }
